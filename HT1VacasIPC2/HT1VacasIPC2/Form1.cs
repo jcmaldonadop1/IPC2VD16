@@ -155,5 +155,49 @@ namespace HT1VacasIPC2
             }
 
         }
+
+        private void button5_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click_2(object sender, EventArgs e)
+        {
+
+            try
+            {
+                //volumen de una esfera
+
+                double s, resultado, pi, radio = 0;
+                s = 1.333333;
+                pi = 3.141592;
+                radio = double.Parse(textBox13.Text);
+
+                //volumen de un cono
+                double Fraccion, resultadoCono, AlturaCono, radioCono, resultadoFinal = 0;
+                Fraccion = 0.333333;
+                radioCono = double.Parse(textBox14.Text);
+                AlturaCono = double.Parse(textBox15.Text);
+                //volumen de una esfera
+                resultado = s * pi * Math.Pow(radio, 3);
+
+                label22.Text = resultado.ToString() + "U^3";
+
+                //volumen de un cono
+                resultadoCono = Fraccion * pi * Math.Pow(radioCono, 2) * AlturaCono;
+                label23.Text = resultadoCono.ToString() + "U^3";
+
+                resultadoFinal = resultado + resultadoCono;
+                textBox16.Text = resultadoFinal.ToString();
+            }
+            catch
+            {
+
+                MessageBox.Show("Verifique Datos", "Alerta");
+            }
+
+
+
+        }
     }
 }
