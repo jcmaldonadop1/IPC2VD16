@@ -200,5 +200,10 @@ namespace HT1VacasIPC2
 
 
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Process.Start("preguntas.txt");
+        }
     }
 }

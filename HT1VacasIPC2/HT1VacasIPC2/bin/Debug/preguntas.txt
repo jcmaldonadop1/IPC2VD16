@@ -1,0 +1,23 @@
+¿Qué entiende como "commit"?
+
+Se trata de guardar los cambios efectuados de un determinado proyecto.
+
+Se puede decir que Commit guarda todo el proyecto en el cual se esta trabajando con los cambios que se realizaron por ultimavez.
+
+Commit cuenta con una descripcion que explica por que se hizo un cambio  particular en el proyecto que se esta trabajando.
+
+Commit guarda la ultima actualizacion del proyecto en el repositorio remoto.
+
+
+¿Qué entiende como "merge"?
+
+Es la opción para poder unir o fucionar una determinada rama con otra de un proyecto determinado.
+
+Sirve para fusionar otra rama a una rama activa.
+
+¿Cuál es la diferencia entre "Pull" y "Push"?
+
+Pull(halar):Sirve para actualizar el repositorio local al commit mas nuevo.
+
+Push(Empujar):Sirve para subir los archivos actualizados ya confirmados al Github por medio de un commit.
+Sirve para subir lo más actualizado a tu repositorio remoto por medio de un commit.
