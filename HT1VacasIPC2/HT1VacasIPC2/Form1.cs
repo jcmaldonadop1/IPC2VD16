@@ -87,5 +87,28 @@ namespace HT1VacasIPC2
            
 
         }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            double x, y, w = 0;
+
+            double resultado = 0;
+
+            try
+            {
+                x = double.Parse(textBox5.Text);
+                y = double.Parse(textBox6.Text);
+                w = double.Parse(textBox7.Text);
+
+                resultado = Math.Sqrt(x) - Math.Pow(y, 2) + w;
+
+                textBox8.Text = resultado.ToString();
+            }
+            catch
+            {
+                MessageBox.Show("Verifique Datos", "Alerta");
+            }
+
+        }
     }
 }
