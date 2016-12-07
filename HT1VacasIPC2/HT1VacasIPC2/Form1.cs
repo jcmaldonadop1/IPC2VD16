@@ -110,5 +110,50 @@ namespace HT1VacasIPC2
             }
 
         }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            double Xuno, Xdos = 0;
+            double temp = 0;
+            int a, b, c = 0;
+
+
+            try
+            {
+                a = int.Parse(this.textBox9.Text);
+                b = int.Parse(this.textBox10.Text);
+                c = int.Parse(this.textBox11.Text);
+
+                temp = Math.Pow(b, 2) - (4 * a * c);
+
+                a = 2 * a;
+
+                if (Math.Sign(temp) == -1)
+                {
+                    temp = (Math.Sqrt(-temp)) / a;
+                    Xuno = -b / a;
+                    textBox12.Text = Xuno + "-" + temp.ToString() + "i";
+                    textBox17.Text = Xuno + "+" + temp.ToString() + "i";
+
+
+                }
+                else
+                {
+                    temp = Math.Sqrt(temp);
+                    Xuno = (-b - temp) / a;
+                    Xdos = (-b + temp) / a;
+                    textBox12.Text = Xuno.ToString();
+                    textBox17.Text = Xdos.ToString();
+
+                }
+
+               
+            }
+            catch
+            {
+                MessageBox.Show("Verifique Datos", "Alerta");
+            }
+
+        }
     }
 }
