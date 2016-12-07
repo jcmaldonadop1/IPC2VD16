@@ -146,8 +146,9 @@ namespace HT1VacasIPC2
                     textBox17.Text = Xdos.ToString();
 
                 }
+                MessageBox.Show("2012-226-87", "Carnet");
 
-               
+
             }
             catch
             {
